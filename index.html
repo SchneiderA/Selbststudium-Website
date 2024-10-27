@@ -20,6 +20,7 @@
         width: 100%;
         object-fit: cover;
         z-index: -1; /*Bild im Hintergrund */
+        filter: brightness(0.5);
       }
       .container {
         position: absolute;
@@ -36,16 +37,21 @@
       .menu-link:hover {
         text-decoration: underline;
       }
+      .logo{
+        position: absolute;
+        left: 32px;
+        top: 16px;
+      }
     </style>
   </head>
   <body>
-    <h1>Hallo</h1>
+    <img class="header-image" src="img/it-image.jpg" />
     <div class="container">
       <a class="menu-link" href="">Home</a>
       <a class="menu-link" href="">Kontakt</a>
       <a class="menu-link" href="">Impressum</a>
       <a class="menu-link" href="">Anruf</a>
     </div>
-    <img class="header-image" src="img/it-image.jpg" />
+    <img src="img/Logo.png" alt="Logo">
   </body>
 </html>
