@@ -37,10 +37,14 @@
       .menu-link:hover {
         text-decoration: underline;
       }
-      .logo{
+      .logo {
         position: absolute;
         left: 32px;
         top: 16px;
+        width: 80px; /*Logo Gr. eingestellt*/
+        height: auto;
+        filter: brightness(0) invert(1); /*logo changed to white*/
+        z-index: 1;
       }
     </style>
   </head>
@@ -52,6 +56,6 @@
       <a class="menu-link" href="">Impressum</a>
       <a class="menu-link" href="">Anruf</a>
     </div>
-    <img src="img/Logo.png" alt="Logo">
+    <img src="img/Logo.png" alt="Logo" class="logo" />  <!-- calss logo added -->
   </body>
 </html>
