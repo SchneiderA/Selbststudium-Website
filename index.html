@@ -46,6 +46,23 @@
         filter: brightness(0) invert(1); /*logo changed to white*/
         z-index: 1;
       }
+      .headline {
+        position: absolute;
+        left: 50px;
+        top: 300px;
+        color: whitesmoke;
+        font-size: 70px;
+        text-shadow: 10px 10px 10px rgba(0, 0, 0);
+      }
+      .blue{
+        color: #0404f9;
+      }
+      .button {
+        background-color: rgb(0, 0, 255);
+        padding: 8px;
+        border-radius: 8px;
+        
+      }
     </style>
   </head>
   <body>
@@ -54,8 +71,15 @@
       <a class="menu-link" href="">Home</a>
       <a class="menu-link" href="">Kontakt</a>
       <a class="menu-link" href="">Impressum</a>
-      <a class="menu-link" href="">Anruf</a>
+      <a class="menu-link button" href="">Anruf</a>
     </div>
-    <img src="img/Logo.png" alt="Logo" class="logo" />  <!-- calss logo added -->
+    <img src="img/Logo.png" alt="Logo" class="logo" />
+    <!-- calss logo added -->
+    <h1 class="headline">
+     <span class="blue">DAA</span> Basics
+      <hr />
+      Kommt noch <br />
+      auf uns zu!
+    </h1>
   </body>
 </html>
