@@ -5,17 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dummies for IT</title>
     <style>
-        body{
-            margin: 0;
-        }
-        .header-image {
-            height: 100vh;
-            object-fit: cover;
-        }
+      body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+      }
+      .header-image {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+        object-fit: cover;
+        z-index: -1; /*Bild im Hintergrund */
+      }
+      .container {
+        position: absolute;
+        right: 32px;
+        top: 16px;
+        font-size: 24px;
+        z-index: 1; /*Text über dem Bild*/
+      }
+      .menu-link {
+        color: white;
+        text-decoration: none;
+        margin-left: 16px;
+      }
+      .menu-link:hover {
+        text-decoration: underline;
+      }
     </style>
   </head>
   <body>
-      <h1>Hallo</h1>
-    <img class="header-image" src="/img/it-image.jpg">
+    <h1>Hallo</h1>
+    <div class="container">
+      <a class="menu-link" href="">Home</a>
+      <a class="menu-link" href="">Kontakt</a>
+      <a class="menu-link" href="">Impressum</a>
+      <a class="menu-link" href="">Anruf</a>
+    </div>
+    <img class="header-image" src="img/it-image.jpg" />
   </body>
 </html>
